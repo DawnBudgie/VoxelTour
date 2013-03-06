@@ -44,7 +44,7 @@ public class TourHandler {
 			ongoing.get(p.getName()).points.remove(p.getName());
 			ongoing.remove(p.getName());
 			p.sendMessage(ChatColor.AQUA + "We hope you enjoyed your tour!");
-			p.sendMessage(ChatColor.AQUA + "View other avaliable tours using /listtours");
+			p.sendMessage(ChatColor.AQUA + "View other available tours using /listtours");
 			return true;
 		}
 		return false;
@@ -82,7 +82,7 @@ public class TourHandler {
 		if(!po.message.isEmpty()) p.sendMessage(repalceColourCodes(po.message));
 	}
 	public String repalceColourCodes(String s) {
-		return s.replace('&', '§');
+		return s.replace('&', 'ï¿½');
 	}
 
 	public void createTour(String name, Player p) {
